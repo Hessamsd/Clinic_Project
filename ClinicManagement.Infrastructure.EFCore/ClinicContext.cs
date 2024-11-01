@@ -3,6 +3,7 @@ using ClinicManagement.Domain.DoctorAgg;
 using ClinicManagement.Domain.DoctorSecretaryAgg;
 using ClinicManagement.Domain.PatientAgg;
 using ClinicManagement.Domain.SecretaryAgg;
+using ClinicManagement.Infrastructure.EFCore.Mapping;
 using Microsoft.EntityFrameworkCore;
 
 namespace ClinicManagement.Infrastructure.EFCore
@@ -21,6 +22,8 @@ namespace ClinicManagement.Infrastructure.EFCore
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            var assembly = typeof(DoctorMapping).Assembly;
+            modelBuilder.ApplyConfigurationsFromAssembly(assembly);
             base.OnModelCreating(modelBuilder);
         }
     }
