@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinic_Project", "Clinic_Project\Clinic_Project.csproj", "{615BEBE0-F939-4CD6-8117-571D1D316ACE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clinic_Management", "Clinic_Management", "{FFAC7908-74CD-424C-9BB5-032486525D7B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CL.Infrastructure", "CL.Infrastructure", "{A303422C-9401-42BA-8E67-4C5BE056D50B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CL.Domain", "CL.Domain", "{E93D087A-7025-49EA-ADAB-07AB2F8A246C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CL.Application", "CL.Application", "{5C527828-91A3-45E3-95B9-2F92FF7A6C5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{615BEBE0-F939-4CD6-8117-571D1D316ACE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{615BEBE0-F939-4CD6-8117-571D1D316ACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{615BEBE0-F939-4CD6-8117-571D1D316ACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{615BEBE0-F939-4CD6-8117-571D1D316ACE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A303422C-9401-42BA-8E67-4C5BE056D50B} = {FFAC7908-74CD-424C-9BB5-032486525D7B}
+		{E93D087A-7025-49EA-ADAB-07AB2F8A246C} = {FFAC7908-74CD-424C-9BB5-032486525D7B}
+		{5C527828-91A3-45E3-95B9-2F92FF7A6C5B} = {FFAC7908-74CD-424C-9BB5-032486525D7B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {140811C2-212F-4696-ACBB-18EE70044A97}
+	EndGlobalSection
+EndGlobal
