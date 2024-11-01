@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicManagement.Configurat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicManagement.Infrastructure.EFCore", "ClinicManagement.Infrastructure.EFCore\ClinicManagement.Infrastructure.EFCore.csproj", "{63EE9EC8-5590-4A0F-9EB1-9EFAB57D29C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0_Framework", "0_Framework\0_Framework.csproj", "{3C61C730-DDDC-4E8B-A204-F34E40834C28}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{63EE9EC8-5590-4A0F-9EB1-9EFAB57D29C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63EE9EC8-5590-4A0F-9EB1-9EFAB57D29C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63EE9EC8-5590-4A0F-9EB1-9EFAB57D29C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C61C730-DDDC-4E8B-A204-F34E40834C28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C61C730-DDDC-4E8B-A204-F34E40834C28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C61C730-DDDC-4E8B-A204-F34E40834C28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C61C730-DDDC-4E8B-A204-F34E40834C28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
