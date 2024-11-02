@@ -52,11 +52,12 @@ namespace ClinicManagement.Domain.DoctorAgg
             Appointments = new HashSet<Appointment>();
         }
 
-        public Doctor(string fullName, string photo, string specialty,
+        public Doctor(string fullName, string photo, string specialty,string city,
             string medicalLicenseNumber, string clinicNumber,
             string biography)
         {
             FullName = fullName;
+            City = city;
             Photo = photo;
             Specialty = specialty;
             MedicalLicenseNumber = medicalLicenseNumber;

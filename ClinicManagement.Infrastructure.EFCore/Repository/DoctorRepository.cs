@@ -16,9 +16,10 @@ namespace ClinicManagement.Infrastructure.EFCore.Repository
 
         public async Task<Doctor> GetDetails(int id)
         {
-            return await _context.Doctors
-             .Include(d => d.Specialty)
-             .FirstOrDefaultAsync(d => d.Id == id);
+            return await _context.Doctors.FirstOrDefaultAsync(d => d.Id == id);
+            ///include.Speciality
+
+
         }
 
         public async Task<List<DoctorVM>> GetDoctors()

@@ -6,6 +6,7 @@ namespace ClinicManagement.Application.Contracts.Doctor
 {
     public class CreateDoctor
     {
+       
         [Required(ErrorMessage = ValidationMessages.IsRequired)]
         public string FullName { get; set; }
 

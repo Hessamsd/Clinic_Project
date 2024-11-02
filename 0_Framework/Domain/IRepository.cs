@@ -12,6 +12,8 @@ namespace Framework.Domain
         Task<bool> Exists(Expression<Func<T, bool>> expression);
         Task SaveChangesAsync();
 
-
     }
 }
+
+
+

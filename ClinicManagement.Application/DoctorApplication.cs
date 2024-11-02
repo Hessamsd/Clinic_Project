@@ -9,10 +9,12 @@ namespace ClinicManagement.Application
     {
 
         private readonly IDoctorRepository _doctorRepository;
+        private readonly IFileUploader _fileUploader;
 
-        public DoctorApplication(IDoctorRepository doctorRepository)
+        public DoctorApplication(IDoctorRepository doctorRepository, IFileUploader fileUploader)
         {
             _doctorRepository = doctorRepository;
+            _fileUploader = fileUploader;
         }
 
         public async Task<OperationResult> Create(CreateDoctor command)
@@ -23,8 +25,18 @@ namespace ClinicManagement.Application
             if (await _doctorRepository.Exists(x => x.FullName == command.FullName))
                 return operation.Failed(ApplicationMessage.DuplicatedRecord);
 
-            var doctor = new Doctor(command.FullName, command.Photo.FileName,   
-                command.Specialty, command.MedicalLicenseNumber, command.ClinicNumber, command.Biography);
+
+            
+            var picturePath = _fileUploader.Upload(command.Photo,"Doctor");
+
+
+
+            var doctor = new Doctor( command.FullName, picturePath,command.City
+                ,command.Specialty,command.MedicalLicenseNumber,command.ClinicNumber,command.Biography);
+
+
+
+
 
             await _doctorRepository.Add(doctor);
             await _doctorRepository.SaveChangesAsync();
