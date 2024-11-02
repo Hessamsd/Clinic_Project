@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClinicManagement.Application.Contracts\ClinicManagement.Application.Contracts.csproj" />
+    <ProjectReference Include="..\ClinicManagement.Application\ClinicManagement.Application.csproj" />
+    <ProjectReference Include="..\ClinicManagement.Infrastructure.EFCore\ClinicManagement.Infrastructure.EFCore.csproj" />
+  </ItemGroup>
+
+</Project>

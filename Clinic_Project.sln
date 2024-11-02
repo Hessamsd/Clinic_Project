@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clinic_Project", "Clinic_Project\Clinic_Project.csproj", "{615BEBE0-F939-4CD6-8117-571D1D316ACE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clinic_Project", "Clinic_Project\Clinic_Project.csproj", "{615BEBE0-F939-4CD6-8117-571D1D316ACE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clinic_Management", "Clinic_Management", "{FFAC7908-74CD-424C-9BB5-032486525D7B}"
 EndProject
@@ -13,17 +13,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CL.Domain", "CL.Domain", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CL.Application", "CL.Application", "{5C527828-91A3-45E3-95B9-2F92FF7A6C5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicManagement.Domain", "ClinicManagement.Domain\ClinicManagement.Domain.csproj", "{75695A10-8E74-4A67-83BD-494957CFFCE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClinicManagement.Domain", "ClinicManagement.Domain\ClinicManagement.Domain.csproj", "{75695A10-8E74-4A67-83BD-494957CFFCE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicManagement.Application", "ClinicManagement.Application\ClinicManagement.Application.csproj", "{7EBF787E-1EC8-4871-8F36-C6C0F2D65C28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClinicManagement.Application", "ClinicManagement.Application\ClinicManagement.Application.csproj", "{7EBF787E-1EC8-4871-8F36-C6C0F2D65C28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicManagement.Application.Contracts", "ClinicManagement.Application.Contracts\ClinicManagement.Application.Contracts.csproj", "{93063751-5248-467A-8719-B94F0FFC6683}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClinicManagement.Application.Contracts", "ClinicManagement.Application.Contracts\ClinicManagement.Application.Contracts.csproj", "{93063751-5248-467A-8719-B94F0FFC6683}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicManagement.Configuration", "ClinicManagement.Configuration\ClinicManagement.Configuration.csproj", "{0A9C3D99-5863-452C-BCC7-04DFE9D9C1A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClinicManagement.Infrastructure.Configuration", "ClinicManagement.Configuration\ClinicManagement.Infrastructure.Configuration.csproj", "{0A9C3D99-5863-452C-BCC7-04DFE9D9C1A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClinicManagement.Infrastructure.EFCore", "ClinicManagement.Infrastructure.EFCore\ClinicManagement.Infrastructure.EFCore.csproj", "{63EE9EC8-5590-4A0F-9EB1-9EFAB57D29C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClinicManagement.Infrastructure.EFCore", "ClinicManagement.Infrastructure.EFCore\ClinicManagement.Infrastructure.EFCore.csproj", "{63EE9EC8-5590-4A0F-9EB1-9EFAB57D29C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0_Framework", "0_Framework\0_Framework.csproj", "{3C61C730-DDDC-4E8B-A204-F34E40834C28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0_Framework", "0_Framework\0_Framework.csproj", "{3C61C730-DDDC-4E8B-A204-F34E40834C28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
