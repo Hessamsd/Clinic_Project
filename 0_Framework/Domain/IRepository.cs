@@ -1,4 +1,6 @@
-﻿namespace Framework.Domain
+﻿using System.Linq.Expressions;
+
+namespace Framework.Domain
 {
     public interface IRepository<TKey, T> where T : class
     {
@@ -7,6 +9,9 @@
         Task Add(T command);
         Task Update(T command);
         Task Delete(TKey id);
+        Task<bool> Exists(Expression<Func<T, bool>> expression);
+        void SaveChanges();
+
 
     }
 }

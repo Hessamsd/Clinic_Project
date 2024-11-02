@@ -14,25 +14,25 @@ namespace ClinicManagement.Infrastructure.EFCore.Repository
             _context = context;
         }
 
-        public Doctor GetDetails(int id)
+        public async Task<Doctor> GetDetails(int id)
         {
-            return _context.Doctors
-                           .Include(d => d.Specialty) 
-                           .FirstOrDefault(d => d.Id == id);
+            return await _context.Doctors
+             .Include(d => d.Specialty)
+             .FirstOrDefaultAsync(d => d.Id == id);
         }
 
-        public List<DoctorVM> GetDoctors()
+        public async Task<List<DoctorVM>> GetDoctors()
         {
-            return _context.Doctors
-                          .Select(d => new DoctorVM
-                          {
-                              Id = d.Id,
-                              FullName = d.FullName,
-                              Specialty = d.Specialty != null ? d.Specialty : string.Empty 
-                          }).ToList();
+            return await _context.Doctors
+            .Select(d => new DoctorVM
+            {
+                Id = d.Id,
+                FullName = d.FullName,
+                Specialty = d.Specialty != null ? d.Specialty : string.Empty
+            }).ToListAsync();
         }
 
-        public List<DoctorVM> Search(DoctorSearchModel searchModel)
+        public async Task<List<DoctorVM>> Search(DoctorSearchModel searchModel)
         {
             var query = _context.Doctors.AsQueryable();
 
@@ -41,12 +41,12 @@ namespace ClinicManagement.Infrastructure.EFCore.Repository
                 query = query.Where(d => d.FullName.Contains(searchModel.FullName));
             }
 
-            return query.Select(d => new DoctorVM
+            return await query.Select(d => new DoctorVM
             {
                 Id = d.Id,
                 FullName = d.FullName,
-                Specialty = d.Specialty != null ? d.Specialty : string.Empty 
-            }).ToList();
+                Specialty = d.Specialty != null ? d.Specialty : string.Empty
+            }).ToListAsync();
         }
     }
 }

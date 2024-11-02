@@ -1,5 +1,6 @@
 ﻿using Framework.Domain;
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace Framework.Infrastructure
 {
@@ -31,6 +32,11 @@ namespace Framework.Infrastructure
             }
         }
 
+        public async Task<bool> Exists(Expression<Func<T, bool>> expression)
+        {
+            return await _dbSet.AnyAsync(expression);
+        }
+
         public async Task<IEnumerable<T>> GetAll()
         {
             return await _dbSet.ToListAsync();
@@ -39,6 +45,11 @@ namespace Framework.Infrastructure
         public async Task<T> GetById(TKey id)
         {
             return await _dbSet.FindAsync(id);
+        }
+
+        public void SaveChanges()
+        {
+            _context.SaveChanges();
         }
 
         public async Task Update(T command)
