@@ -10,7 +10,7 @@ namespace Framework.Domain
         Task Update(T command);
         Task Delete(TKey id);
         Task<bool> Exists(Expression<Func<T, bool>> expression);
-        void SaveChanges();
+        Task SaveChangesAsync();
 
 
     }

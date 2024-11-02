@@ -26,8 +26,8 @@ namespace ClinicManagement.Application
             var doctor = new Doctor(command.FullName, command.Photo.FileName,   
                 command.Specialty, command.MedicalLicenseNumber, command.ClinicNumber, command.Biography);
 
-            _doctorRepository.Add(doctor);
-            _doctorRepository.SaveChanges();
+            await _doctorRepository.Add(doctor);
+            await _doctorRepository.SaveChangesAsync();
             return operation.Succedded();
         }
 

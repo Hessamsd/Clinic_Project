@@ -46,10 +46,11 @@ namespace Framework.Infrastructure
         {
             return await _dbSet.FindAsync(id);
         }
+               
 
-        public void SaveChanges()
+        public async Task SaveChangesAsync()
         {
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
         }
 
         public async Task Update(T command)
